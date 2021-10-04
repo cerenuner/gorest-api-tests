@@ -17,7 +17,7 @@ In `RetryAnalyzer` class, change `maxRetryCount` value. Default value is 5 right
 # Changing Environment Values
 In `BaseSettings` class, change desired parameter. Here is the list of the values:
 
-- "baseURI" => "https://gorest.co.in/public/"
+- "baseURI" => "https://gorest.co.in/"
     - This value is main API URL.
 - "usersPath" => "v1/users"
     - This value is used to call on user create, update and delete operations on `UserUtils` class
