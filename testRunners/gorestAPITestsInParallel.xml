@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Gorest API tests" parallel="methods" thread-count="5" verbose="1">
+
+    <listeners>
+        <listener class-name="baseSettings.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="User Operation Tests">
+        <classes>
+            <class name="scenarios.users.CreateUsers"/>
+            <class name="scenarios.users.UpdateUsers"/>
+            <class name="scenarios.users.DeleteUsers"/>
+        </classes>
+    </test>
+
+    <test name="Post Operation Tests">
+        <classes>
+            <class name="scenarios.posts.CreatePosts"/>
+        </classes>
+    </test>
+
+    <test name="Comment Operation Tests">
+        <classes>
+            <class name="scenarios.comments.CreateComments"/>
+        </classes>
+    </test>
+
+</suite>
